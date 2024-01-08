@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ros/source/robot_4wd/install/setup.sh

@@ -1,0 +1,17 @@
+digraph G {
+node [shape=box];
+"body_link" [label="body_link"];
+"wheel1_link" [label="wheel1_link"];
+"wheel2_link" [label="wheel2_link"];
+"wheel3_link" [label="wheel3_link"];
+"wheel4_link" [label="wheel4_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"body_link" -> "wheel1_joint" [label="xyz: -0.3 -0.35 -0.1 \nrpy: 0 -0 0"]
+"wheel1_joint" -> "wheel1_link"
+"body_link" -> "wheel2_joint" [label="xyz: -0.3 0.35 -0.1 \nrpy: 0 -0 0"]
+"wheel2_joint" -> "wheel2_link"
+"body_link" -> "wheel3_joint" [label="xyz: 0.3 -0.35 -0.1 \nrpy: 0 -0 0"]
+"wheel3_joint" -> "wheel3_link"
+"body_link" -> "wheel4_joint" [label="xyz: 0.3 0.35 -0.1 \nrpy: 0 -0 0"]
+"wheel4_joint" -> "wheel4_link"
+}
